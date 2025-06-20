@@ -50,12 +50,6 @@ def read_cvrp_file(filepath):
 
     return dimension, capacity, coords, demands, depot
 
-d, cap, coords, demand, dep = read_cvrp_file("Dificil.txt")
-print(d)
-print(cap)
-print(coords)
-print(demand)
-print(dep)
 
 # === Calcular matriz de distancias euclidianas ===
 def euclidean_distance_matrix(coords):
@@ -285,6 +279,7 @@ def interchange(solucion, dist_matrix, demands, capacidad):
     return mejor_solucion
 def fix_solution(solucion, num_clientes, demands, capacidad):
     # Paso 1: Limpiar y normalizar las rutas (asegurar [0, ..., 0] y eliminar rutas vacías)
+    expected_customers = set(range(1, num_clientes + 1))
     cleaned_solution = []
     all_nodes_present = [] # Para rastrear todos los clientes encontrados
 
@@ -312,7 +307,7 @@ def fix_solution(solucion, num_clientes, demands, capacidad):
             pass
 
     # Paso 2: Identificar clientes duplicados y faltantes
-    expected_customers = set(range(1, num_customers + 1))
+    expected_customers = set(range(1, num_clientes + 1))
     node_counts = Counter(all_nodes_present)
 
     current_found_customers_set = set(node_counts.keys())
