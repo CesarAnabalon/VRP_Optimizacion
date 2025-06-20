@@ -3,9 +3,9 @@ Repositorio código entrega final trabajo de análisis de metaheurística para e
 
 Cesar Anabalo 21.587.124-k
 Fabiana Piña 21.526.472-6
-Francisca silva 21571001-7
+Francisca silva 21.571.001-7
 
-Este proyecto implementa una solución para el **Problema de Enrutamiento de Vehículos con Capacidad (CVRP)** utilizando la metaheurística de **Búsqueda de Vecindario Variable (VNS)**, específicamente la estrategia de Descenso de Vecindario Variable (VND). El CVRP busca optimizar las rutas de una flota de vehículos para atender a un conjunto de clientes con demandas específicas, minimizando la distancia total recorrida y respetando la capacidad de carga de cada vehículo.
+Este proyecto implementa una solución para el **Problema de Enrutamiento de Vehículos con Capacidad (VRP)** utilizando la metaheurística de **Búsqueda de Vecindario Variable (VNS)**, específicamente la estrategia de Descenso de Vecindario Variable (VND). El CVRP busca optimizar las rutas de una flota de vehículos para atender a un conjunto de clientes con demandas específicas, minimizando la distancia total recorrida y respetando la capacidad de carga de cada vehículo.
 
 La solución generada permite encontrar rutas eficientes para el transporte de mercancías o servicios, ideal para la logística y distribución.
 
@@ -24,7 +24,7 @@ La solución generada permite encontrar rutas eficientes para el transporte de m
 
 ### Requisitos
 
-* **Python **: El código ha sido desarrollado y probado en Python .
+* **Python**: El código ha sido desarrollado y probado en Python .
 * **Ninguna librería externa adicional** es estrictamente necesaria fuera de las que vienen con la instalación estándar de Python (`math`, `random`, `re`, `collections`).
 
 ### Cómo Usar
